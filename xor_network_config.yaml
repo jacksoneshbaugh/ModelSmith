@@ -1,0 +1,38 @@
+# Data configuration (currently, only csv is a valid input file type)
+data:
+  type: csv
+  path: 'xor.csv'
+  inputs:
+    - Input1
+    - Input2
+  outputs:
+    - Output
+
+# Model type (currently not very useful, would be used if support for FunctionalAPI
+# is needed)
+model: sequential
+
+# Network layer configuration
+layers:
+  - type: Input
+    shape: [2]
+  - type: Dense
+    units: 8
+    activation: 'relu'
+    kernel_initializer: 'he_normal'
+  - type: Dense
+    units: 1
+    activation: 'sigmoid'
+
+# Configuration of the training algorithm to use
+training:
+  optimizer: 'adam'
+  loss: 'binary_crossentropy'
+  learning_rate: 0.001
+  metrics: ['accuracy']
+  batch_size: 8
+  epochs: 1000
+  validation_split: 0.2
+
+# Configuration of the random number generator seed (for reproducibility)
+random_seed: 38
