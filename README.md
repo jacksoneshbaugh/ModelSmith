@@ -5,6 +5,9 @@ Create TensorFlow models from YAML config files.
 Created as a tool for a research project out of Lafayette College, ModelSmith is a useful tool to build networks quickly and efficiently.
 
 ## Setting Up a Model Config YAML File
+
+**It's super easy to set up a YAML file now!** Just use the `create_model_config.py` script to get a GUI configuration that you can use to build a YAML file.
+
 There are five distinct sections in any model config YAML file:
 - `data`
 - `model`
@@ -83,6 +86,3 @@ It's _super_ simple: just run the Python script and input the name of the config
 ```zsh
 python3 modelsmith.py
 ```
-
-## Future Features
-- I hope to add a GUI that makes creating these YAML files even easier.
