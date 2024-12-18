@@ -6,7 +6,7 @@ Created as a tool for a research project out of Lafayette College, ModelSmith is
 
 ## Setting Up a Model Config YAML File
 
-**It's super easy to set up a YAML file now!** Just use the `create_model_config.py` script to get a GUI configuration that you can use to build a YAML file.
+**It's super easy to set up a YAML file now!** Just use the `create_model_config.py` script to get a GUI tool that you can use to build a YAML file.
 
 There are five distinct sections in any model config YAML file:
 - `data`
